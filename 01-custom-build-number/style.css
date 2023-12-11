@@ -1,0 +1,98 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@600&family=Courier+Prime&display=swap');
+
+.frame {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 400px;
+  height: 400px;
+  margin-top: -200px;
+  margin-left: -200px;
+  border-radius: 6px;
+	box-shadow: 4px 8px 16px 0 rgba(0,0,0,0.1);
+	overflow: hidden;
+    background: linear-gradient(45deg, #5e3c7e 0%, #5e4aae 15%, #227ed4 50%, #7ad3f6);
+  color: #333;
+	font-family: 'Big Shoulders Display', sans-serif;
+    font-family: 'Courier Prime', monospace;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+.center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  
+}
+
+.borders {
+    border: 2px solid white;
+    box-shadow: 0 0 13px 0 rgba(0, 0, 0, 0.2);
+}
+
+.one-one {
+    background-color: white;
+    position: absolute;
+    top: -109px;
+    left: -96px;
+    transform: rotate(48deg);
+    transform-origin: 0%;
+    width: 20px;
+    height: 43px; 
+    border-radius: 4px;    
+}
+
+.one-two {
+    background-color: white;
+    position: absolute;
+    top: -100px;
+    left: -80px;
+    width: 23px;
+    height: 90px;
+    border-radius: 2px;
+    z-index: 4;   
+}
+
+.zero-one {
+    position: absolute;
+    top: -100px;
+    left: -60px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: 25px solid white;
+    z-index: 3;
+}
+
+.zero-two {
+    position: absolute;
+    top: -100px;
+    left: 20px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: 25px solid white;
+    z-index: 1;
+}
+
+.days {
+    position: absolute;
+    left: -95px;
+    top: -10px;
+    font-weight: 500;
+    font-size: 90px;
+    color: white;
+}
+
+.challenge {
+    width: 300px;
+    position: absolute;
+    top: 65px;
+    left: -105px;
+    color: white;
+    font-weight: 500;
+    font-size: 30px;
+}
