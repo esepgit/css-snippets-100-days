@@ -1,0 +1,171 @@
+
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:700,300);
+
+.frame {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 400px;
+  height: 400px;
+  margin-top: -200px;
+  margin-left: -200px;
+  border-radius: 6px;
+	box-shadow: 4px 8px 16px 0 rgba(0,0,0,0.1);
+	overflow: hidden;
+  background: linear-gradient(45deg, rgb(252, 213, 141), rgb(215, 121, 53));
+  color: #333;
+	font-family: 'Open Sans', Helvetica, sans-serif;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+.center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+}
+
+.card {
+    width: 320px;
+    height: 300px;
+    box-shadow: 8px 8px 8px 2px rgba(0,0,0,0.2);
+    background-color: snow;
+}
+
+.profile {
+   box-sizing: border-box;
+   height: 100%;
+   width: 65%;
+   position: absolute;
+}
+
+.circle1 {
+    position: absolute;
+    border: 1px solid;
+    border-color: saddlebrown transparent saddlebrown saddlebrown;
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    left: 44px;
+    top: 20px;
+    transition: all 1.5s ease-in-out;
+}
+
+.img {
+    cursor: pointer;
+}
+
+.img:hover .circle1{
+    transform: rotate(360deg);
+}
+
+.img:hover .circle2 {
+    
+    transform: rotate(-360deg);
+}
+
+.circle2 {
+    position: relative;
+    overflow: hidden;
+    margin: 0 auto;
+    border: 1px solid;
+    border-color: saddlebrown saddlebrown saddlebrown transparent;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    left: 0px;
+    top: 30px;
+    transition: all 1.5s ease-in-out;
+}
+
+.image {
+    position: absolute;
+    top: 0px;
+    left: 50px;
+    width: 50%;
+    height: 50%;
+    border-radius: 50%;
+    object-fit: contain;
+}
+
+.name {
+    position: absolute;
+    top: 50%;
+    left: 40%;
+    font-size: medium;
+    font-weight: 600;
+    color: saddlebrown;
+}
+
+.profesion {
+    position: absolute;
+    top: 56%;
+    left: 42%;
+    font-size: 12px;
+}
+
+.buttons {
+    position: absolute;
+    left: 25%;
+    border: 1px solid saddlebrown;
+    border-radius: 20px;
+    font-size: 12px;
+    font-weight: 700;
+    color: saddlebrown;
+    text-align: center;
+    padding: 6px;
+    width: 110px;
+    background: snow;
+}
+
+.buttons:hover {
+    background: rgb(127, 69, 28);
+    color: snow;
+}
+
+.follow {
+    bottom: 20%;
+    margin-bottom: 8px;
+}
+
+.message {
+    bottom: 10%;
+}
+
+.data {
+    position: absolute;
+    right: 0;
+    height: 100%;
+    box-sizing: border-box;
+    width: 35%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.posts {
+    background-color: #F5E8DF;
+    height: 100%;
+    border-bottom: 1px solid white;
+    border-top: 1px solid white;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.posts:hover {
+    background: #cfc3bb;
+    transition: all 0.4s ease-in-out;
+}
+
+.number {
+    font-weight: 700;
+    color: saddlebrown;
+}
+
+.comment {
+    font-size: 12px;
+    color: saddlebrown;
+}
