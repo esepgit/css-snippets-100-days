@@ -1,0 +1,99 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:700,300);
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css");
+
+.frame {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 400px;
+  height: 400px;
+  margin-top: -200px;
+  margin-left: -200px;
+  border-radius: 6px;
+	box-shadow: 4px 8px 16px 0 rgba(0,0,0,0.1);
+	overflow: hidden;
+  background: #264057;
+  color: #333;
+	font-family: 'Open Sans', Helvetica, sans-serif;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+.center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  display: flex;
+  justify-content: center;
+}
+
+.card {
+  position: absolute;
+  top: -115px;
+  left: -50px;
+  width: 300px;
+  height: 300px;
+  margin: 0 auto;
+}
+
+.header {
+  width: 100%;
+  height: 18%;
+  background-color: #5F98CD;
+  border-radius: 4px 4px 0 0;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.body {
+  width: 100%;
+  height: 82%;
+  background-color: snow;
+  border-radius: 0 0 4px 4px;
+}
+
+.menu-icon {
+ width: 30px;
+ height: 20px;
+ display: flex;
+ flex-direction: column;
+ justify-content: space-around;
+}
+
+.search {
+  font-size: 23px;
+  background-color: transparent;
+  color: #B2DAFF;
+  border: transparent;
+}
+
+.title {
+  font-weight: 600;
+  color: snow;
+  font-size: 15px;
+}
+
+.dash-top, .dash-bottom {
+  width: 100%;
+  background-color: #B2DAFF;
+  height: 3px;
+  border-radius: 4px;
+}
+
+.menu-icon .circle {
+  background-color: #B2DAFF;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  border: 2px solid #5F98CD;
+  position: absolute;
+  left: 43px;
+  top: 16px;
+}
+
+.input {
+  visibility: hidden;
+  position: absolute;
+}
