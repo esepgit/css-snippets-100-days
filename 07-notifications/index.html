@@ -5,44 +5,52 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="./scripts.js"></script>
     <title>Notifications</title>
 </head>
 <body>
     <div class="frame">
         <div class="center">
-            <div class="card">
+            <div class="card" id="card">
                 <div class="header">
-                    <div class="menu-icon">
+                    <div class="menu-icon" onclick="handleClickMenu()">
                         <div class="dash-top"></div>
-                        <div class="circle"></div>
+                        <div class="circle-header"></div>
                         <div class="dash-bottom"></div>
                     </div>
-                    <input class="input" type="text" placeholder="Search ...">
+                    <input id="input" class="input" type="text" placeholder="Search ...">
                     <span class="title"><p>Notifications</p></span>
-                    <button class="search"><i class="fa fa-search"></i></button>
+                    <button class="search" onclick="handleClickSearch()" ><i class="fa fa-search"></i></button>
                 </div>
                 <div class="body">
                    <span class="line"></span> 
-                   <span class="circle"></span>
-                   <span class="time">9:24 AM</span>
-                   <span class="note"><p><strong>John Walker</strong> posted a photo on your wall.</p></span>
+                   <span class="circle circle-1"></span>
+                   <div class="note-content">
+                       <span class="time time-1">9:24 AM</span>
+                       <span class="note note-1"><p><strong>John Walker</strong> posted a photo on your wall.</p></span>
+                   </div>
 
-                   <span class="circle"></span>
-                   <span class="time">8:19 AM</span>
-                   <span class="note"><p><strong>Alice Parker</strong> commented your last post.</p></span>
-
-                   <span class="circle"></span>
-                   <span class="time"Yesterday</span>
-                   <span class="note"><p><strong>Luke Wayne</strong> added you as friend.</p></span>
+                   <span class="circle circle-2"></span>
+                   <div class="note-content">
+                        <span class="time time-2">8:19 AM</span>
+                        <span class="note note-2"><p><strong>Alice Parker</strong> commented your last post.</p></span>
+                   </div>
+                   
+                   <span class="circle circle-3"></span>
+                   <div class="note-content">
+                        <span class="time time-3">Yesterday</span>
+                        <span class="note note-3"><p><strong>Luke Wayne</strong> added you as friend.</p></span>
+                   </div>
+                   
                 </div>
             </div>
             
-            <div class="menu">
-                <button class="btn-menu"><i class="fa fa-dashboard"></i>Dashboard</button>
-                <button class="btn-menu"><i class="fa fa-user"></i>Profile</button>
-                <button class="btn-menu"><i class="fa fa-bell"></i>Notifications</button>
-                <button class="btn-menu"><i class="fa fa-comments"></i>Messages</button>
-                <button class="btn-menu"><i class="fa fa-gear"></i>Settings</button>
+            <div class="menu" id="menu">
+                <button class="btn-menu"><i class="fa fa-dashboard"></i> Dashboard</button>
+                <button class="btn-menu"><i class="fa fa-user"></i> Profile</button>
+                <button class="btn-menu"><i class="fa fa-bell"></i> Notifications</button>
+                <button class="btn-menu"><i class="fa fa-comments"></i> Messages</button>
+                <button class="btn-menu"><i class="fa fa-gear"></i> Settings</button>
             </div>
         </div>
       </div> 

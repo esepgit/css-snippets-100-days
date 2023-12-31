@@ -29,12 +29,17 @@
 }
 
 .card {
-  position: absolute;
-  top: -115px;
-  left: -50px;
   width: 300px;
   height: 300px;
   margin: 0 auto;
+}
+
+.card-active {
+  animation: entryCard 0.5s forwards;
+}
+
+.card-inactive {
+  animation: exitCard 0.5s forwards;
 }
 
 .header {
@@ -60,6 +65,11 @@
  display: flex;
  flex-direction: column;
  justify-content: space-around;
+ cursor: pointer;
+}
+
+.menu-icon:hover > * {
+  background-color: snow;
 }
 
 .search {
@@ -67,6 +77,12 @@
   background-color: transparent;
   color: #B2DAFF;
   border: transparent;
+  cursor: pointer;
+  margin-right: -10px;
+}
+
+.search:hover {
+  color: snow;
 }
 
 .title {
@@ -82,18 +98,210 @@
   border-radius: 4px;
 }
 
-.menu-icon .circle {
+.circle-header {
   background-color: #B2DAFF;
   width: 8px;
   height: 8px;
   border-radius: 50%;
   border: 2px solid #5F98CD;
   position: absolute;
-  left: 43px;
-  top: 16px;
+  left: 44px;
+  top: 17px;
 }
 
 .input {
-  visibility: hidden;
   position: absolute;
+  height: 32px;
+  width: 210px;
+  border-radius: 20px;
+  border: none;
+  left: 14px;
+  padding-left: 18px;
+  visibility: hidden;
+}
+
+.active { 
+  animation: entry 0.5s forwards;
+}
+
+.inactive {
+  animation: exit 0.5s forwards;
+}
+
+.line {
+  position: absolute;
+  height: 82%;
+  width: 3px;
+  background-color: #1c1c1c;
+  opacity: 0.1;
+  left: 27px;
+}
+
+.circle {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  border: 2px solid #5F98CD;
+  box-shadow: 0 0 0 3px rgba(250, 250, 250) ;
+  background-color: snow;
+  position: absolute;
+}
+
+.circle-1 {
+  left: 23px;
+  top: 82px;
+}
+
+.circle-2 {
+  left: 23px;
+  top: 160px;
+}
+
+.circle-3 {
+  left: 23px;
+  top: 234px;
+}
+
+.time {
+  font-size: 11px;
+  position: absolute;
+  color: #1c1c1c;
+  opacity: 0.9;
+}
+
+.time-1 {
+  top: 80px;
+  left: 42px;
+}
+
+.time-2 {
+  top: 158px;
+  left: 42px;
+}
+
+.time-3 {
+  top: 232px;
+  left: 42px;
+}
+
+.note {
+  position: absolute;
+  font-size: 15px;
+  width: 230px;
+  color: #1c1c1c;
+  opacity: 0.7;
+}
+
+.note-1 {
+  top: 80px;
+  left: 42px;
+}
+
+.note-2 {
+  top: 158px;
+  left: 42px;
+}
+
+.note-3 {
+  top: 232px;
+  left: 42px;
+}
+
+.note-content:hover > * {
+  color: #5F98CD;
+}
+
+.menu {
+  position: absolute;
+  height: 260px;
+  width: 180px;
+  background-color: #43627D;;
+  z-index: -1;
+  top: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: flex-start;
+  border-radius: 2px;
+}
+
+.menu > button {
+  color: #93B2CD;
+  background-color: transparent;
+  border: none;
+  font-size: 15px;
+  text-align: start;
+  width: 100%;
+  height: 100%;
+  transition: all 0.3s ease-in-out;
+  padding-left: 14px;
+  cursor: pointer;
+}
+
+.menu > button:hover {
+  background: #385269
+}
+
+.menu-active {
+  animation: entryMenu 0.5s forwards;
+}
+
+.menu-inactive {
+  animation: exitMenu 0.5s forwards;
+}
+
+@keyframes entry {
+  from {
+    transform: translateX(20px);
+    visibility: hidden;
+  } to {
+    transform: translateX(0px);
+    visibility: visible;
+  }
+}
+
+@keyframes exit {
+  0% {
+    transform: translateX(0px);
+    visibility: visible;
+  } 50% {
+    visibility: hidden;
+  } 100% {
+    transform: translateX(20px);
+    
+  }
+}
+
+@keyframes entryMenu {
+  from {
+    transform: translateX(0px);
+  } to {
+    transform: translateX(-70px);
+  }
+}
+
+@keyframes exitMenu {
+  0% {
+    transform: translateX(-70px);
+  } 100% {
+    transform: translateX(0px);
+    
+  }
+}
+
+@keyframes entryCard {
+  from {
+    transform: translateX(0px);
+  } to {
+    transform: translateX(130px);
+  }
+}
+
+@keyframes exitCard {
+  0% {
+    transform: translateX(130px);
+  } 100% {
+    transform: translateX(0px);
+    
+  }
 }
