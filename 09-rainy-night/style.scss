@@ -92,6 +92,7 @@
     top: 10%;
     left: 10%;
     overflow: hidden;
+    animation: moonIn 2s ease;
   }
 
   .crater {
@@ -160,15 +161,65 @@
   }
 
   .drop {
-    width: 0;
-    height: 0;
-    border-left: 10px solid transparent;
-    border-top: 10px solid transparent;
-    border-bottom: 20px solid #7FC1F9; 
     position: absolute;
-    top: 50%;
-    left: 10%;
+    top: -3%;
     z-index: 2;
     border: 3px 0 3px 3px;
+    background-color: #7FC1F9;
+    border-radius: 0 50% 50% 50%;
+  }
+
+  .drop-lg {
+    width: 10px;
+    height: 10px;
+  }
+
+  .drop-md {
+    width: 6px;
+    height: 6px;
+  }
+
+  .drop-sm {
+    width: 3px;
+    height: 3px;
+  }
+
+  @for $i from 1 through 10 {
+    .drop-#{$i} {
+      left: (-20 + 38 * $i) + px;
+      animation: drop (0.7 + random(2) / 10) + s linear (random(50) / 25) + s infinite;
+    }
+  }
+
+  @for $i from 11 through 15 {
+    .drop-#{$i} {
+      left: (-350 + 40 * $i) + px;
+      animation: drop (1 + random(2) / 4) + s linear (random(50) / 25) + s infinite;
+    }
+  }
+
+  @for $i from 16 through 23 {
+    .drop-#{$i} {
+      left: (-400 + 30 * $i) + px;
+      animation: drop (2 + random(2) / 7) + s linear (random(50) / 25) + s infinite;
+    }
+  }
+
+  @keyframes moonIn {
+    from {
+      transform: translateY(250%);
+    } to {
+      transform: translateY(0%);
+    }
+  }
+
+  @keyframes drop {
+    0% {
+      transform: translateY(0) scaleX(1) rotate(70deg);
+    } 85% {
+      transform: translateY(314px) scaleX(1) rotate(70deg);
+    } 100% {
+      transform: translateY(314px) scaleX(3) rotate(70deg);
+    }
   }
 

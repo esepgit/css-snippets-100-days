@@ -91,6 +91,7 @@
   top: 10%;
   left: 10%;
   overflow: hidden;
+  animation: moonIn 2s ease;
 }
 
 .crater {
@@ -159,16 +160,162 @@
 }
 
 .drop {
-  width: 0;
-  height: 0;
-  border-left: 10px solid transparent;
-  border-top: 10px solid transparent;
-  border-bottom: 20px solid #7FC1F9;
   position: absolute;
-  top: 50%;
-  left: 10%;
+  top: -3%;
   z-index: 2;
   border: 3px 0 3px 3px;
+  background-color: #7FC1F9;
+  border-radius: 0 50% 50% 50%;
+}
+
+.drop-lg {
+  width: 10px;
+  height: 10px;
+}
+
+.drop-md {
+  width: 6px;
+  height: 6px;
+}
+
+.drop-sm {
+  width: 3px;
+  height: 3px;
+}
+
+.drop-1 {
+  left: 18px;
+  animation: drop 0.8s linear 0.68s infinite;
+}
+
+.drop-2 {
+  left: 56px;
+  animation: drop 0.9s linear 0.4s infinite;
+}
+
+.drop-3 {
+  left: 94px;
+  animation: drop 0.9s linear 1.76s infinite;
+}
+
+.drop-4 {
+  left: 132px;
+  animation: drop 0.9s linear 0.12s infinite;
+}
+
+.drop-5 {
+  left: 170px;
+  animation: drop 0.9s linear 0.12s infinite;
+}
+
+.drop-6 {
+  left: 208px;
+  animation: drop 0.9s linear 0.56s infinite;
+}
+
+.drop-7 {
+  left: 246px;
+  animation: drop 0.9s linear 0.48s infinite;
+}
+
+.drop-8 {
+  left: 284px;
+  animation: drop 0.9s linear 0.56s infinite;
+}
+
+.drop-9 {
+  left: 322px;
+  animation: drop 0.9s linear 1.36s infinite;
+}
+
+.drop-10 {
+  left: 360px;
+  animation: drop 0.8s linear 0.6s infinite;
+}
+
+.drop-11 {
+  left: 90px;
+  animation: drop 1.25s linear 1.72s infinite;
+}
+
+.drop-12 {
+  left: 130px;
+  animation: drop 1.5s linear 0.6s infinite;
+}
+
+.drop-13 {
+  left: 170px;
+  animation: drop 1.5s linear 1.08s infinite;
+}
+
+.drop-14 {
+  left: 210px;
+  animation: drop 1.25s linear 1.52s infinite;
+}
+
+.drop-15 {
+  left: 250px;
+  animation: drop 1.25s linear 1.6s infinite;
+}
+
+.drop-16 {
+  left: 80px;
+  animation: drop 2.1428571429s linear 0.4s infinite;
+}
+
+.drop-17 {
+  left: 110px;
+  animation: drop 2.2857142857s linear 1.28s infinite;
+}
+
+.drop-18 {
+  left: 140px;
+  animation: drop 2.2857142857s linear 1.44s infinite;
+}
+
+.drop-19 {
+  left: 170px;
+  animation: drop 2.2857142857s linear 0.92s infinite;
+}
+
+.drop-20 {
+  left: 200px;
+  animation: drop 2.2857142857s linear 1.2s infinite;
+}
+
+.drop-21 {
+  left: 230px;
+  animation: drop 2.1428571429s linear 1.04s infinite;
+}
+
+.drop-22 {
+  left: 260px;
+  animation: drop 2.1428571429s linear 1.28s infinite;
+}
+
+.drop-23 {
+  left: 290px;
+  animation: drop 2.2857142857s linear 1.96s infinite;
+}
+
+@keyframes moonIn {
+  from {
+    transform: translateY(250%);
+  }
+  to {
+    transform: translateY(0%);
+  }
+}
+@keyframes drop {
+  0% {
+    transform: translateY(0) scaleX(1) rotate(70deg);
+  }
+  85% {
+    transform: translateY(314px) scaleX(1) rotate(70deg);
+  }
+  100% {
+    transform: translateY(314px) scaleX(3) rotate(70deg);
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
