@@ -1,0 +1,174 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:700,300);
+* {
+  box-sizing: border-box;
+}
+
+.frame {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 400px;
+  height: 400px;
+  margin-top: -200px;
+  margin-left: -200px;
+  border-radius: 6px;
+  box-shadow: 4px 8px 16px 0 rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  background: #1A2238;
+  color: #333;
+  font-family: "Open Sans", Helvetica, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.footer {
+  height: 90px;
+  bottom: 0;
+  position: absolute;
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  background-color: white;
+  z-index: 3;
+}
+
+.temp {
+  font-size: 40px;
+}
+
+.wind > p, .days > p {
+  font-size: 15px;
+  margin: 0;
+}
+
+.mountain {
+  border-radius: 50%;
+  position: absolute;
+  width: 320px;
+  height: 320px;
+}
+
+.mountain-back {
+  background: #26314F;
+  bottom: -28%;
+}
+
+.mountain-front {
+  background: #303C5D;
+  z-index: 1;
+  bottom: -38%;
+}
+
+.mountain-1 {
+  left: -30%;
+}
+
+.mountain-2 {
+  bottom: -34%;
+  left: 20%;
+}
+
+.mountain-3 {
+  right: -40%;
+}
+
+.mountain-4 {
+  left: -16%;
+}
+
+.mountain-5 {
+  right: -20%;
+}
+
+.moon {
+  position: absolute;
+  width: 65px;
+  height: 65px;
+  border-radius: 50%;
+  background: #F6EDBD;
+  box-shadow: 0 0 10px 0 #F6EDBD;
+  top: 10%;
+  left: 10%;
+  overflow: hidden;
+}
+
+.crater {
+  background: #ECE1A8;
+  position: absolute;
+}
+
+.crater-lg {
+  width: 13px;
+  height: 13px;
+  border-radius: 50%;
+}
+
+.crater-1 {
+  left: 30%;
+}
+
+.crater-2 {
+  top: 20%;
+}
+
+.crater-3 {
+  bottom: 10%;
+  left: 20%;
+}
+
+.crater-md {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+}
+
+.crater-4 {
+  top: 20%;
+  right: 10%;
+}
+
+.crater-5 {
+  top: 30%;
+  right: 40%;
+}
+
+.crater-6 {
+  top: 40%;
+  right: 20%;
+}
+
+.crater-7 {
+  top: 55%;
+  right: 50%;
+}
+
+.crater-8 {
+  top: 60%;
+  right: 20%;
+}
+
+.crater-9 {
+  top: 70%;
+  right: 40%;
+}
+
+.crater-10 {
+  top: 80%;
+  right: 10%;
+}
+
+.drop {
+  width: 0;
+  height: 0;
+  border-left: 10px solid transparent;
+  border-top: 10px solid transparent;
+  border-bottom: 20px solid #7FC1F9;
+  position: absolute;
+  top: 50%;
+  left: 10%;
+  z-index: 2;
+  border: 3px 0 3px 3px;
+}
+
+/*# sourceMappingURL=style.css.map */
